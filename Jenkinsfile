@@ -5,7 +5,6 @@ node {
 
   stage('build') {
     sh '''
-        mvn clean package
         mv target/*.war ROOT.war
     '''
   }
